@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breast Cancer Diagnosis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #F0F0F0;
+            text-align: center;
+            color: #364F6B;
+        }
+        header {
+            background-color: #43DDE6;
+            padding: 20px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        header h1 {
+            font-size: 40px;
+            text-align: left;
+            margin: 0;
+            color: #FC5185;
+        }
+        .logo {
+            height: 100px;
+            width: auto;
+
+        }
+        .about {
+            padding: 40px 20px;
+        }
+        .main-btn {
+    color: #fff;
+    background-color: #FC5185;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: 500;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 0.9px;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    transition: 0.7s ease;
+}
+
+.main-btn:hover {
+    background-color: #364F6B;
+    transform: scale(1.1);
+}
+        form {
+            background: white;
+            padding: 40px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            text-align: left;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #364F6B;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #FC5185;
+            color: white;
+            cursor: pointer;
+            border: none;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #364F6B;
+        }
+        footer {
+            padding: 20px;
+            background-color: #43DDE6;
+            color: white;
+            margin-top: 40px;
+        }
+        .admin-button {
+            margin: 20px auto;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>InnovCare</h1>
+    <div><h2>We care about your health</h2>
+    <h3>Your Health, Our Priority</h3>
+</div>
+    <img src="static/132281721612463.png" alt="Logo" class="logo">
+</header>
+
+<section class="about">
+    <h2>About Us</h2>
+    <p>We offer initial diagnosis for breast cancer patients. Our expert doctors provide early detection and guidance to ensure the best care for every patient.</p>
+
+</section>
+<a href="https://baheya.org/ar/donate" class="main-btn">Donate now</a>
+<section>
+    <h2>Initial Diagnosis Form</h2>
+    <form id="diagnosisForm">
+        <input type="text" placeholder="Name" name="name" required>
+        <input type="tel" placeholder="Phone Number" name="phone" required>
+        <input type="number" placeholder="Age" name="age" required>
+        <input type="text" placeholder="National ID Number" name="id" required>
+    
+        <h3>Patient Eligibility</h3>
+        <label>Does the woman have a medical history of any breast cancer?</label>
+        <select name="history" required>
+            <option value="Yes" selected>Yes</option>
+            <option value="No">No</option>
+        </select>
+    
+        <label>Does the woman have a genetic syndrome associated with elevated breast cancer risk?</label>
+        <select name="genetic_mutation" required>
+            <option value="Unknown" selected>Unknown</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+    
+        <label>What is the patient’s race/ethnicity?</label>
+        <select name="ethnicity" required>
+            <option value="Unknown" selected>Unknown</option>
+            <option value="White">White</option>
+            <option value="Black or African American">Black or African American</option>
+            <option value="Asian">Asian</option>
+            <option value="Hispanic or Latino">Hispanic or Latino</option>
+            <option value="Other">Other</option>
+        </select>
+    
+        <h3>Patient & Family History</h3>
+        <label>Has the patient ever had a breast biopsy with a benign diagnosis?</label>
+        <select name="biopsy" required>
+            <option value="Unknown" selected>Unknown</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+    
+        <label>What was the woman’s age at the time of her first menstrual period?</label>
+        <select name="menstrual_age" required>
+            <option value="12-13" selected>12 to 13</option>
+            <option value="7-11">7 to 11</option>
+            <option value="14 or older">14 or older</option>
+        </select>
+    
+        <label>What was the woman’s age when she gave birth to her first child?</label>
+        <select name="birth_age" required>
+            <option value="Unknown" selected>Unknown</option>
+            <option value="No Births">No Births</option>
+            <option value="20">Under 20</option>
+            <option value="20-24">20-24</option>
+            <option value="25-29">25-29</option>
+            <option value="30 or older">30 or older</option>
+        </select>
+    
+        <label>How many of the woman’s first-degree relatives have had breast cancer?</label>
+        <select name="family_history" required>
+            <option value="Unknown" selected>Unknown</option>
+            <option value="None">None</option>
+            <option value="One">One</option>
+            <option value="More than one">More than one</option>
+        </select>
+    
+        <h3>Additional Medical Information</h3>
+        <label>Are you in menopause?</label>
+        <select name="menopause" required>
+            <option value="No" selected>No</option>
+            <option value="Yes">Yes</option>
+        </select>
+    
+        <label>What is the size of the tumor in centimeters?</label>
+        <input type="number" step="0.1" placeholder="Tumor Size (cm)" name="tumor_size" value="0">
+    
+        <label>Which breast is affected?</label>
+        <select name="breast" required>
+            <option value="Left" selected>Left</option>
+            <option value="Right">Right</option>
+        </select>
+    
+        <label>Has the tumor metastasized?</label>
+        <select name="metastasis" required>
+            <option value="No" selected>No</option>
+            <option value="Yes">Yes</option>
+        </select>
+    
+        <label>Which quadrant of the breast is affected?</label>
+        <select name="breast_quadrant" required>
+            <option value="Upper outer" selected>Upper outer</option>
+            <option value="Upper inner">Upper inner</option>
+            <option value="Lower outer">Lower outer</option>
+            <option value="Lower inner">Lower inner</option>
+            <option value="Central">Central</option>
+        </select>
+    
+        <label>Do you have a family history of breast cancer?</label>
+        <select name="family_history_cancer" required>
+            <option value="No" selected>No</option>
+            <option value="Yes">Yes</option>
+        </select>
+    
+        <label>What was the diagnosis result?</label>
+        <select name="diagnosis_result" required>
+            <option value="None" selected>None</option>
+            <option value="Benign">Benign</option>
+            <option value="Malignant">Malignant</option>
+        </select>
+    
+        <button type="submit">Submit</button>
+    </form>
+    
+</section>
+
+<footer>
+    <button class="admin-button" onclick="redirectToAdminPage()">Only for administrators</button>
+
+    <p>Contact Us: mohamedqassem138@.com | +20 1551259580</p>
+    <p>Website Created by InnovCare.Ai</p>
+</footer>
+
+<script>
+
+document.getElementById("diagnosisForm").onsubmit = function (e) {
+    e.preventDefault();
+
+    const formData = new FormData(e.target);
+    let jsonData = {};
+
+    formData.forEach((value, key) => {
+        if (value === "" || value === "Select" || value === "Unknown") {
+            jsonData[key] = null;
+        } else {
+            jsonData[key] = value;
+        }
+    });
+
+    jsonData.age = parseInt(jsonData.age) || 0;
+    jsonData.tumor_size = parseFloat(jsonData.tumor_size) || 0;
+
+    console.log("Sending data:", jsonData);
+
+    fetch("http://127.0.0.1:5000/predict", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(jsonData)
+    })
+    .then(response => response.json())
+    .then(data => {
+        alert("Thank you for your trust and we will reach you soon..");
+        jsonData.prediction = data.prediction;
+
+        // Save patient data in localStorage
+        let patients = JSON.parse(localStorage.getItem("patients")) || [];
+        patients.push(jsonData);
+        localStorage.setItem("patients", JSON.stringify(patients));
+        
+        console.log("Stored Data:", patients);
+    })
+    .catch(error => {
+        console.error("Error:", error);
+    });
+
+    e.target.reset();
+};
+
+function redirectToAdminPage() {
+    const username = prompt("Enter your username:");
+    const password = prompt("Enter your password:");
+    if (username === "admin" && password === "admin123") {
+        window.location.href = "admin.html";  // Ensure this file exists in the same directory
+    } else {
+        alert("Invalid credentials.");
+    }
+}
+
+  
+  </script>
+
+</body>
+</html>

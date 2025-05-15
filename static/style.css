@@ -1,0 +1,88 @@
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #F0F0F0;
+            text-align: center;
+            color: #364F6B;
+        }
+        header {
+            background-color: #43DDE6;
+            padding: 20px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        header h1 {
+            font-size: 40px;
+            text-align: left;
+            margin: 0;
+            color: #FC5185;
+        }
+        .logo {
+            height: 100px;
+            width: auto;
+
+        }
+        .about {
+            padding: 40px 20px;
+        }
+        .main-btn {
+    color: #fff;
+    background-color: #FC5185;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: 500;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 0.9px;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    transition: 0.7s ease;
+}
+
+.main-btn:hover {
+    background-color: #364F6B;
+    transform: scale(1.1);
+}
+        form {
+            background: white;
+            padding: 40px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            text-align: left;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #364F6B;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #FC5185;
+            color: white;
+            cursor: pointer;
+            border: none;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #364F6B;
+        }
+        footer {
+            padding: 20px;
+            background-color: #43DDE6;
+            color: white;
+            margin-top: 40px;
+        }
+        .admin-button {
+            margin: 20px auto;
+            width: 200px;
+        }
+
+
