@@ -1,0 +1,27 @@
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #F0F0F0;
+            color: #364F6B;
+            padding: 20px;
+        }
+        h1 {
+            color: #FC5185;
+        }
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #364F6B;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #43DDE6;
+            color: white;
+        }
+   

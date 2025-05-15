@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/style2.css">
+</head>
+<body>
+    <h1>Admin Panel - Submitted Data</h1>
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Age</th>
+                <th>National ID</th>
+                <th>Medical History</th>
+                <th>Genetic Mutation</th>
+                <th>Ethnicity</th>
+                <th>Biopsy</th>
+                <th>Menstrual Age</th>
+                <th>Birth Age</th>
+                <th>Family History</th>
+                <th>Menopause</th>
+                <th>Tumor Size</th>
+                <th>Inv-Nodes</th>
+                <th>Breast</th>
+                <th>Metastasis</th>
+                <th>Breast Quadrant</th>
+                <th>Family History Cancer</th>
+                <th>Diagnosis Result</th>
+                <th>Model_prediction</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be populated here using JavaScript -->
+        </tbody>
+    </table>
+
+    <script>
+       document.addEventListener("DOMContentLoaded", function () {
+    const tableBody = document.querySelector("#dataTable tbody");
+
+    let patients = JSON.parse(localStorage.getItem("patients")) || [];
+
+    if (patients.length === 0) {
+        console.log("No patient data found in local storage.");
+        return;
+    }
+
+    patients.forEach(patient => {
+        const row = document.createElement("tr");
+        row.innerHTML = `
+            <td>${patient.name}</td>
+            <td>${patient.phone}</td>
+            <td>${patient.age}</td>
+            <td>${patient.national_id}</td>
+            <td>${patient.history}</td>
+            <td>${patient.genetic_mutation}</td>
+            <td>${patient.ethnicity}</td>
+            <td>${patient.biopsy}</td>
+            <td>${patient.menstrual_age}</td>
+            <td>${patient.birth_age}</td>
+            <td>${patient.family_history}</td>
+            <td>${patient.menopause}</td>
+            <td>${patient.tumor_size}</td>
+            <td>${patient.inv_nodes}</td>
+            <td>${patient.breast}</td>
+            <td>${patient.metastasis}</td>
+            <td>${patient.breast_quadrant}</td>
+            <td>${patient.family_history_cancer}</td>
+            <td>${patient.diagnosis_result}</td>
+            <td>${patient.prediction}</td>
+        `;
+        tableBody.appendChild(row);
+    });
+});
+
+
+    </script>
+
+</body>
+</html>
