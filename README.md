@@ -94,6 +94,13 @@ npm install
 npm run dev
 ```
 
+## 🗃 SQL Database Integration
+
+In addition to model training, this project includes integration with a **SQL database** to store and manage  Patient records.
+
+ the system can persist prediction results or intermediate data into a structured database for future reference or integration with a hospital's EMR system.
+
+This lays the groundwork for deploying the model in production environments where data logging and traceability are important.
 
 
 ##  Conclusion
