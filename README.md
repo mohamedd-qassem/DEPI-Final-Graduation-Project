@@ -72,15 +72,15 @@ all models were trained and evaluated using a traditional train/test split appro
 
 To assess performance:
 
-- ✅ `classification_report` (includes precision, recall, f1-score)
-- ✅ `recall_score` (critical for minimizing false negatives in cancer detection)
-- ✅ Confusion Matrix (to visualize true/false positive/negatives)
+-  `classification_report` (includes precision, recall, f1-score)
+-  `recall_score` (critical for minimizing false negatives in cancer detection)
+-  Confusion Matrix (to visualize true/false positive/negatives)
 
 Special attention was paid to **recall** to reduce the risk of missing malignant cases.
 
 ---
 
-## 🧠 Handling Class Imbalance
+##  Handling Class Imbalance
 
 This project uses:
 ```python
@@ -94,7 +94,7 @@ npm install
 npm run dev
 ```
 
-## 🗃 SQL Database Integration
+##  SQL Database Integration
 
 In addition to model training, this project includes integration with a **SQL database** to store and manage  Patient records.
 
