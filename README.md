@@ -11,7 +11,7 @@ This is a machine learning-based web application and Mobile app designed to assi
 ##  Objectives
 
 - Enable early prediction of breast cancer using AI.
-- Handle real-world class imbalance using `class_weight='balanced'`.
+- Handle real-world class imbalance 
 - Provide clear and interpretable outputs to medical professionals.
 
 ---
