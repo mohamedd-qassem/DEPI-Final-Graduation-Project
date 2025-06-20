@@ -44,10 +44,10 @@ This is a web-based application that leverages machine learning to assist in the
 
 ```bash
 # Step 1: Clone the repo
-git clone <YOUR_GIT_URL>
+git clone git@github.com:mohamedd-qassem/DEPI-Final-Graduation-Project.git
 
 # Step 2: Enter the project directory
-cd <YOUR_PROJECT_NAME>
+cd DEPI-Final-Graduation-Project
 
 # Step 3: Install dependencies
 npm install
