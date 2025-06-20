@@ -1,73 +1,56 @@
-# AI - Powered Early Breast Cancer Detection System
+# 🧠 AI-Powered Early Breast Cancer Detection System
 
-## Project info
+## 📌 Overview
 
-**URL**: https://lovable.dev/projects/9d542c4e-2ce7-43d7-8e3d-8a8bdab77799
+This is a web-based application that leverages machine learning to assist in the **early detection of breast cancer**. The system analyzes diagnostic features from patient data and predicts the likelihood of malignancy, providing fast, accessible, and explainable results to aid clinical decision-making.
 
-## How can I edit this code?
+👉 **Live Project**: [Lovable Project](https://lovable.dev/projects/9d542c4e-2ce7-43d7-8e3d-8a8bdab77799)
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## 🎯 Objectives
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/9d542c4e-2ce7-43d7-8e3d-8a8bdab77799) and start prompting.
+- Enable early and accurate breast cancer prediction using AI.
+- Provide an intuitive interface for both professionals and non-technical users.
+- Enhance diagnostic decision-making with explainable outputs.
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## 🧪 Tech Stack
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+| Technology     | Purpose                            |
+|----------------|-------------------------------------|
+| **Vite**       | Fast build tool for the frontend    |
+| **TypeScript** | Type-safe JavaScript                |
+| **React**      | UI Framework                        |
+| **Tailwind CSS** | Utility-first styling             |
+| **shadcn/ui**  | Modern UI components                |
+| **ML Model**   | Breast cancer classification (e.g., Random Forest or SVM) |
+| **Lovable.dev** | AI-powered app builder & deployment |
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## 🛠️ How to Edit or Run Locally
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
+### ✨ Option 1: Use Lovable (No Code)
+
+1. Visit the project: [Lovable Editor](https://lovable.dev/projects/9d542c4e-2ce7-43d7-8e3d-8a8bdab77799)
+2. Use natural language to prompt changes
+3. All updates are auto-committed
+
+### 💻 Option 2: Run Locally in Your IDE
+
+> You need Node.js & npm installed (recommended via [nvm](https://github.com/nvm-sh/nvm))
+
+```bash
+# Step 1: Clone the repo
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
+# Step 2: Enter the project directory
 cd <YOUR_PROJECT_NAME>
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Step 3: Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Step 4: Start the local dev server
 npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/9d542c4e-2ce7-43d7-8e3d-8a8bdab77799) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
