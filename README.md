@@ -1,4 +1,4 @@
-# Welcome to your Lovable project
+# AI - Powered Early Breast Cancer Detection System
 
 ## Project info
 
