@@ -2,55 +2,106 @@
 
 ##  Overview
 
-This is a web-based application that leverages machine learning to assist in the **early detection of breast cancer**. The system analyzes diagnostic features from patient data and predicts the likelihood of malignancy, providing fast, accessible, and explainable results to aid clinical decision-making.
+This is a machine learning-based web application designed to assist in the **early detection of breast cancer** by classifying tumors as benign or malignant. It applies **class-balanced ML models** to tackle real-world challenges like data imbalance, delivering fast, accurate, and explainable results.
 
- **Live Project**: [Lovable Project](https://lovable.dev/projects/9d542c4e-2ce7-43d7-8e3d-8a8bdab77799)
+ **Live App**: [Lovable Project](https://lovable.dev/projects/9d542c4e-2ce7-43d7-8e3d-8a8bdab77799)
 
 ---
 
 ##  Objectives
 
-- Enable early and accurate breast cancer prediction using AI.
-- Provide an intuitive interface for both professionals and non-technical users.
-- Enhance diagnostic decision-making with explainable outputs.
+- Enable early prediction of breast cancer using AI.
+- Handle real-world class imbalance using `class_weight='balanced'`.
+- Provide clear and interpretable outputs to medical professionals.
 
 ---
 
-## Tech Stack
+##  Tech Stack
 
-| Technology     | Purpose                            |
-|----------------|-------------------------------------|
-| **Vite**       | Fast build tool for the frontend    |
-| **TypeScript** | Type-safe JavaScript                |
-| **React**      | UI Framework                        |
-| **Tailwind CSS** | Utility-first styling             |
-| **shadcn/ui**  | Modern UI components                |
-| **ML Model**   | Breast cancer classification (e.g., Random Forest or SVM) |
-| **Lovable.dev** | AI-powered app builder & deployment |
+| Technology       | Role                                   |
+|------------------|----------------------------------------|
+| **Vite**         | Frontend build tool                    |
+| **TypeScript**   | Strongly typed JavaScript              |
+| **React**        | Frontend framework                     |
+| **Tailwind CSS** | Utility-first styling                  |
+| **shadcn/ui**    | Elegant UI components                  |
+| **scikit-learn** | Machine learning models & evaluation   |
+| **Lovable.dev**  | Hosting and AI-assisted development    |
 
 ---
 
-##  How to Edit or Run Locally
+##  Exploratory Data Analysis (EDA)
 
-###  Option 1: Use Lovable (No Code)
+Key EDA steps included:
 
-1. Visit the project: [Lovable Editor](https://lovable.dev/projects/9d542c4e-2ce7-43d7-8e3d-8a8bdab77799)
-2. Use natural language to prompt changes
-3. All updates are auto-committed
+- **Seaborn Heatmaps** and **Matplotlib Plots** to explore:
+  - Feature correlations
+  - Distribution of target classes (benign vs malignant)
+  - Feature behavior and variance
 
-### Option 2: Run Locally in Your IDE
+These steps helped identify which features were most predictive of malignancy and revealed class imbalance in the dataset.
 
-> You need Node.js & npm installed (recommended via [nvm](https://github.com/nvm-sh/nvm))
+---
+
+##  Models Used
+
+Two supervised learning algorithms were implemented with **class weighting** to address imbalance:
+
+1. **Logistic Regression**
+   - Suitable for binary classification
+   - `class_weight='balanced'` automatically adjusts weights inversely to class frequencies
+
+2. **Random Forest Classifier**
+   - Robust against overfitting
+   - Supports class weighting for skewed datasets
+  
+3. **Decision Tree Classifier**
+   - Simple and interpretable model.
+   - Useful for understanding decision boundaries and feature importance.
+
+4. **K-Nearest Neighbors (KNN)**
+   - Instance-based learning algorithm.
+   - Predicts based on proximity to training examples.
+
+all models were trained and evaluated using a traditional train/test split approach.
+
+---
+
+## Evaluation Metrics
+
+To assess performance:
+
+- ✅ `classification_report` (includes precision, recall, f1-score)
+- ✅ `recall_score` (critical for minimizing false negatives in cancer detection)
+- ✅ Confusion Matrix (to visualize true/false positive/negatives)
+
+Special attention was paid to **recall** to reduce the risk of missing malignant cases.
+
+---
+
+## 🧠 Handling Class Imbalance
+
+This project uses:
+```python
+class_weight='balanced'
+```
 
 ```bash
-# Step 1: Clone the repo
 git clone git@github.com:mohamedd-qassem/DEPI-Final-Graduation-Project.git
-
-# Step 2: Enter the project directory
 cd DEPI-Final-Graduation-Project
-
-# Step 3: Install dependencies
 npm install
-
-# Step 4: Start the local dev server
 npm run dev
+```
+
+
+
+##  Conclusion
+
+This project highlights the strengths and trade-offs of various classifiers in early breast cancer detection:
+
+- **Logistic Regression** and **Random Forest** performed well with class balancing.
+- **Decision Trees** provided interpretability.
+- **KNN** added a distance-based perspective on classification.
+
+The final analysis suggests that **balanced class handling** and **recall-oriented evaluation** are crucial for reliable cancer detection tools.
+
