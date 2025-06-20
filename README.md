@@ -2,7 +2,7 @@
 
 ##  Overview
 
-This is a machine learning-based web application designed to assist in the **early detection of breast cancer** by classifying tumors as benign or malignant. It applies **class-balanced ML models** to tackle real-world challenges like data imbalance, delivering fast, accurate, and explainable results.
+This is a machine learning-based web application and Mobile app designed to assist in the **early detection of breast cancer** by classifying tumors as benign or malignant. It applies **class-balanced ML models** to tackle real-world challenges like data imbalance, delivering fast, accurate, and explainable results.
 
  **Live App**: [Lovable Project](https://lovable.dev/projects/9d542c4e-2ce7-43d7-8e3d-8a8bdab77799)
 
