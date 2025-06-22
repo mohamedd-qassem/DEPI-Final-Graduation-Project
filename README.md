@@ -1,5 +1,5 @@
 # AI-Powered Early Breast Cancer Detection System 
-## Our Team EnovCare Graduation Project From DEPI Scholarship
+## Our Team InnovCare Graduation Project From DEPI Scholarship
 
 ##  Overview
 
